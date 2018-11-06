@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myScriptureJournal", "myScriptureJournal\myScriptureJournal.csproj", "{B424D8E4-17E0-4E11-B17D-73C9EC490BE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyScriptureJournal", "myScriptureJournal\MyScriptureJournal.csproj", "{B424D8E4-17E0-4E11-B17D-73C9EC490BE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
