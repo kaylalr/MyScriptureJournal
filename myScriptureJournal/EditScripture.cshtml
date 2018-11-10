@@ -67,28 +67,29 @@
 <body>
     <h1>Edit a Scripture</h1>
     @Html.ValidationSummary()
+    <p><a href="~/ViewAll">Return to scripture listing</a></p>
     <form method="post">
         <fieldset>
             <legend>Scripture Information</legend>
 
             <p>
-                <label for="title">Book:</label>
-                <input type="text" name="book" value="@book" />
+                <label for="book">Book:</label>
+                <input id="book" type="text" name="book" value="@book" />
             </p>
 
             <p>
-                <label for="genre">Chapter:</label>
-                <input type="text" name="chapter" value="@chapter" />
+                <label for="chapter">Chapter:</label>
+                <input id="chapter" type="text" name="chapter" value="@chapter" />
             </p>
 
             <p>
-                <label for="year">Verse:</label>
-                <input type="text" name="verse" value="@verse" />
+                <label for="verse">Verse:</label>
+                <input id="verse" type="text" name="verse" value="@verse" />
             </p>
 
             <p>
-                <label for="year">Note:</label>
-                <input type="text" name="note" value="@note" />
+                <label for="note">Note:</label>
+                <input id="note" type="text" name="note" value="@note" />
             </p>
 
             <input type="hidden" name="scriptureId" value="@scriptureId" />

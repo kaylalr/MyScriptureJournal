@@ -17,7 +17,6 @@
         chapter = Request.Form["chapter"];
         verse = Request.Form["verse"];
         note = Request.Form["note"];
-        //date = Request.Form["date"];
 
         var db = WebMatrix.Data.Database.Open("MyScriptureJournal");
         var insertCommand = "INSERT INTO Scriptures (Book, Chapter, Verse, Note, Date) Values(@0, @1, @2, @3, @4)";
@@ -49,32 +48,33 @@
     </style>
 </head>
 <body>
-    <h1>Add a Movie</h1>
+    <h1>Add a Scripture</h1>
     @Html.ValidationSummary()
+    <p><a href="~/ViewAll">Return to scripture listing</a></p>
     <form method="post">
         <fieldset>
-            <legend>Movie Information</legend>
+            <legend>Scripture Information</legend>
             <p>
-                <label for="title">Book:</label>
-                <input type="text" name="book" value="@Request.Form["book"]" />
+                <label for="book">Book:</label>
+                <input id="book" type="text" name="book" value="@Request.Form["book"]" />
                 @Html.ValidationMessage("book")
             </p>
 
             <p>
-                <label for="genre">Chapter:</label>
-                <input type="text" name="chapter" value="@Request.Form["chapter"]" />
+                <label for="chapter">Chapter:</label>
+                <input id="chapter" type="text" name="chapter" value="@Request.Form["chapter"]" />
                 @Html.ValidationMessage("chapter")
             </p>
 
             <p>
-                <label for="year">Verse:</label>
-                <input type="text" name="verse" value="@Request.Form["verse"]" />
+                <label for="verse">Verse:</label>
+                <input id="verse" type="text" name="verse" value="@Request.Form["verse"]" />
                 @Html.ValidationMessage("verse")
             </p>
 
             <p>
-                <label for="year">Note:</label>
-                <input type="text" name="note" value="@Request.Form["note"]" />
+                <label for="note">Note:</label>
+                <input id="note" type="text" name="note" value="@Request.Form["note"]" />
                 @Html.ValidationMessage("note")
             </p>
 
